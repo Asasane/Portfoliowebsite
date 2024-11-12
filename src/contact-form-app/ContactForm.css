@@ -1,0 +1,42 @@
+.container1 {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(21, 0, 255);
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .alert {
+    color: green;
+    margin-bottom: 10px;
+  }
+  
+  .inputBox {
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
