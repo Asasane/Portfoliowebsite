@@ -347,11 +347,20 @@ const Home = () => {
                   <div className="progress-bar bg-danger" role="progressbar" style={{ width: '80%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
+              
           </div>
-          <div className="App">
-            <h1>Contact Form Messages</h1>
+          <div className="card">
+              <div className="card-header">
+                <div className="pull-left">
+                  <h4 className="mt-2">Contact Form Messages</h4>
+                  <span className="line_long"></span>
+                </div>
+              </div><div className="App">
+           {/*  <h1></h1> */}
               <MessageList />
             </div>
+            </div>
+          
         
           <div className="col-md-6 col-lg-4">
             

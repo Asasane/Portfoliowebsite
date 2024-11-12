@@ -4,8 +4,12 @@ const Message = require("../models/Message");
 
 router.get('/', async (req, res) => {
   try {
-    const messages = await Message.find(); // Fetch all messages from the database
-    res.json(messages); // Send the data back as JSON
+    // Fetch the last two messages based on 'createdAt' field
+    const messages = await Message.find()
+                                  .sort({ createdAt: 2 })  // Sort by createdAt field in descending order
+                                  .limit(2);                // Limit the result to 2 messages
+    
+    res.json(messages); // Send the last 2 messages back as JSON
   } catch (error) {
     res.status(500).json({ error: 'Error fetching messages', message: error.message });
   }

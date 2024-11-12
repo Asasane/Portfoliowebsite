@@ -31,17 +31,25 @@ const MessageList = () => {
 
   return (
     <div>
-      <h2>Contact Messages</h2>
-      <ul>
+      {/* <h2>Contact Messages</h2> */}
+      <ul style={{ listStyleType: 'none', padding: 0 }}>
         {messages.map((message) => (
-          <li key={message._id}>
+            <li key={message._id}>
+            <div style={{ color: 'black' }}>
             <strong>Name:</strong> {message.name} <br />
-            <strong>Email:</strong> {message.email} <br />
-            <strong>Message:</strong> {message.message} <br />
-            <strong>Date:</strong> {new Date(message.date).toLocaleString()} <br />
-          </li>
-        ))}
-      </ul>
+           </div>
+      <div style={{ color: 'black' }}>
+        <strong>Email:</strong> {message.email} <br />
+      </div>
+      <div style={{ color: 'black' }}>
+        <strong>Message:</strong> {message.message} <br />
+      </div>
+      <div style={{ color: 'black' }}>
+        <strong>Date:</strong> {new Date(message.date).toLocaleString()} <br />
+      </div>
+    </li>
+  ))}
+</ul>
     </div>
   );
 };
